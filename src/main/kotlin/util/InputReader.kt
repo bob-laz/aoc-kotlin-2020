@@ -13,6 +13,6 @@ object InputReader {
     }
 
     private fun fromResources(day: Int): File {
-        return File(javaClass.classLoader.getResource("input_day_$day.txt").toURI())
+        return File(javaClass.classLoader.getResource("input_day_$day.txt")!!.toURI())
     }
 }
